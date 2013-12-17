@@ -1,0 +1,44 @@
+{
+  "name": "edpx-crm",
+  "version": "0.3.3",
+  "description": "EDP extension for CRM",
+  "contributors": [
+    {
+      "name": "treelite",
+      "email": "c.xinle@gmail.com"
+    },
+    {
+      "name": "Wanglei",
+      "email": "wuji0223@gmailcom"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rigelfe/edpx-crm"
+  },
+  "scripts": {
+    "install": "edp extension add ./lib",
+    "preuninstall": "edp extension remove ./lib",
+    "test": "jasmine-node --verbose test"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "edp-config": "~0.4.2",
+    "edp-build": "~0.5.2",
+    "edp-package": "~0.4.4",
+    "edp-project": "~0.4.12",
+    "edp-webserver": "~0.4.0",
+    "edp-codegen": "~0.4.2",
+    "mkdirp": "~0.3.5",
+    "velocityjs": "~0.3.13",
+    "uglify-js": "~2.3.6",
+    "MD5": "~1.1.0"
+  },
+  "readme": "# CRM产品线EDP扩展\n\n符合crm产品线特点的项目开发辅助工具，主要完成项目初始化，模拟数据管理，构建等方面。使用前请先参阅[edp说明](https://github.com/ecomfe/edp)，了解基本的edp安装、使用方法。\n\n## 安装\n\n    $ npm install edpx-crm\n\n## 使用\n\n    $ edp help crm\n    CRM项目管理\n    Sub Command:\n    add     添加文件\n    build   构建目录或项目\n    create  创建模块\n    doc     创建jsDoc\n    import  添加第三方依赖\n    init    初始化当前目录为项目目录\n    mock    设置模拟数据\n    refresh 刷新模块配置信息\n    start   启动调试服务器 \n\n## 实例\n\n    $ edp crm init\n    Project Code: test\n    Project Name: 演示项目\n    Project Code (for mock): test\n\n    $ edp crm create index\n\n    $ edp crm start\n\n浏览`localhost:8848/index.action`\n\n## 命令\n\n* [init](doc/init.md)\n* [create](doc/create.md)\n* [add](doc/add.md)\n* [mock](doc/mock.md)\n* [start](doc/start.md)\n* [build](doc/build.md)\n* [doc](doc/doc.md)\n\n## 测试\n\n    $ npm test\n\n使用[jasmine](http://pivotal.github.io/jasmine/)，借助[jasmine-node](https://github.com/mhevery/jasmine-node)构建的单元测试用例\n\n## 版本变更\n\n最新版本：__0.3.3__\n\n* 添加本地模拟使用的`ejson`模块，支持`ejson.toJson()`，`ejson.toSimpleJson`\n* 所有`vm`模版变量统一封装到`$data`中\n* bug fix\n\n[了解更多](doc/changelog.md)\n",
+  "bugs": {
+    "url": "https://github.com/rigelfe/edpx-crm/issues"
+  },
+  "homepage": "https://github.com/rigelfe/edpx-crm",
+  "_id": "edpx-crm@0.3.3",
+  "_from": "edpx-crm@"
+}

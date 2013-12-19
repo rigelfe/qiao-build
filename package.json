@@ -26,6 +26,9 @@
     "edp-package": "~0.4.4",
     "edp-project": "~0.4.12",
     "edp-codegen": "~0.4.2",
+    "esprima": "~1.0.2",
+    "escodegen": "~0.0.22",
+    "estraverse": "~1.1.1",
     "mkdirp": "~0.3.5",
     "uglify-js": "~2.3.6",
     "MD5": "~1.1.0"
